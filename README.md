@@ -1,5 +1,5 @@
 # FAMILY HEIGHTS
-(add 60 inches to every entry in the table)<br><br>
+(add 60 inches to every entry in the Table)<br><br>
 ![Page 1](http://www.medicine.mcgill.ca/epidemiology/hanley/galton/notebook/images/1_page_1.jpg)<br><br>
 ![Page 2](http://www.medicine.mcgill.ca/epidemiology/hanley/galton/notebook/images/2_page_2.jpg)<br><br>
 ![Page 3](http://www.medicine.mcgill.ca/epidemiology/hanley/galton/notebook/images/3_page_3.jpg)<br><br>
