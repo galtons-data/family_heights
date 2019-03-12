@@ -1,0 +1,33 @@
+70,Daughter_1,,4.5 < tall
+,,,
+76,Son_4,7 < medium < 8,
+,Daughter_2,,medium < 7
+,,,
+95,Daughter_2,,deformed < 3
+,,,
+118,Son_4,tallish < 9,
+,Daughter_1-5,,tallish - shortish
+,,,
+119,Daughter_1-3,,3 < tall – medium
+,,,
+131,Daughter_1-3,,medium - short
+,,,
+144,Son_3,deformed < 8,
+,,,
+158,Daughter_4,,1 < short < 2
+,,,
+159,Daughter_1-3,,5.5 < very tall – tall
+,,,
+173,Son_4,short < 5,
+,,,
+176,Son_3,6.5 < medium < 8.5,
+,Daughter_5,,idiotic < - 2.5
+,,,
+177,Daughter_2-3,,5 < tall < 6
+,,,
+189,Son_2,6 < medium < 7,
+,Daughter_2,,1 < medium < 5
+,,,
+,,,idiotic < -2.5 < 1 < short < 2 < shortish < deformed < 3 < medium < 5 < 5.5 < tall < 6 < 7 < very tall
+,,,
+,,short < 5 < deformed < 6 < 6.5< medium  < 7 < medium < 8 < 8.5 < tallish < 9,
