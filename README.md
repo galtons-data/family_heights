@@ -8,4 +8,6 @@
 ![Page 6](http://www.medicine.mcgill.ca/epidemiology/hanley/galton/notebook/images/6_page_6.jpg)<br><br>
 ![Page 7](http://www.medicine.mcgill.ca/epidemiology/hanley/galton/notebook/images/7_page_7.jpg)<br><br>
 ![Page 8](http://www.medicine.mcgill.ca/epidemiology/hanley/galton/notebook/images/8_page_8.jpg)<br><br>
-The data itself is in the CSV and OpenOffice ODS files.
+The data as transcribed from these photocopies is in the CSV, LibreOffice ODS and Excel files.
+## Imputation
+The categorical values in this data have been analysed (see the inequalities file) and imputed into the table.
