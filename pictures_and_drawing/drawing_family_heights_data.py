@@ -205,7 +205,6 @@ Fig_8.set_title('All daughters (pdf).', fontdict=font_d)
 Fig_8.set_xlabel('Height in inches - 60.')
 Fig_8.set_ylabel('Density')
 Fig_8.legend(['Mean = {:06.4f} \nStd    = {:06.4f}'.format(daughters_mean, daughters_std)])
-# Fig_8.legend(loc='best', frameon=False)
 Fig_8.plot(bin_centers, norm.pdf(bin_centers, daughters_mean, daughters_std), 'r-')
 
 plt.show()
