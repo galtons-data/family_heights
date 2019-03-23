@@ -63,6 +63,12 @@ daughters_std = all_daughters.std()
 daughters_size = all_daughters.size
 np_daughters = all_daughters.values   # numpy array for sophisticated statistics
 
+# 4. Fathers and Sons
+
+fathers_and_sons = data[['Father', 'Son_1', 'Son_2', 'Son_3',
+                         'Son_4', 'Son_5', 'Son_6', 'Son_7',
+                         'Son_8', 'Son_9', 'Son_10']]
+
 # Start plotting
 #
 # Scatter plot of Parents
