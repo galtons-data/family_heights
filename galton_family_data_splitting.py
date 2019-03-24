@@ -88,6 +88,7 @@ for son in COLUMNS[3:13]:
 # Post-processing
 #parents_and_sons.dropna(how='any', axis=1)
 parents_and_sons.columns = ['family ID', 'Father', 'Mother', 'Son']
+parents_and_sons = parents_and_sons.astype({'family ID': int}, copy=True)  # in place doesn't work.
 
 # Parents and Daughters.
 
@@ -96,7 +97,8 @@ parents_and_daughters = pandas.DataFrame()
 for daughter in COLUMNS[13:22]:
     parents_and_daughters = parents_and_daughters.append(pandas.DataFrame(data[['family ID', 'Father', 'Mother',daughter]].values).dropna(how='any'), ignore_index=True)
 
-parents_and_daughters.columns = ['family_ID', 'Father', 'Mother', 'Daughter']
+parents_and_daughters.columns = ['family ID', 'Father', 'Mother', 'Daughter']
+parents_and_daughters = parents_and_daughters.astype({'family ID': int}, copy=True)
 
 # Output the results to new files
 
