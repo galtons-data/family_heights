@@ -86,7 +86,20 @@ imputed_data = pandas.concat([parents, sons, daughters],
                              axis=1,
                              join_axes=[parents.index])  # back to full.
 
+# Houston, we have a problem here... Namely the '136A' non-numeric
+# family ID that I moved to the last position in the table.
+# After a very long deliberation I decided to replace it with number
+# 205 without reindexing the table. Re-indexing would make the job
+# of whoever will be verifying these data a hell on Earth. So...
+
+tha_136A_family_ID = {'136A': 205}
+
+imputed_data.replace(to_replace=tha_136A_family_ID, value=None,
+                     inplace=True)    # replace this f...ing 136A
+
 # Output the results to new files
+
+""" Uncomment this if you need these files too!
 
 parents.to_csv('galton_family_heights_parents.csv',
                index=False, header=False)
@@ -96,8 +109,9 @@ sons.to_csv('galton_family_heights_sons_imputed.csv',
 
 daughters.to_csv('galton_family_heights_daughters_imputed.csv',
                index=False, header=False)
+"""
 
 imputed_data.to_csv('galton_family_heights_imputed_final.csv',
                     index=False, header=False)
 
-print('Done!')
+print('Good job!')
