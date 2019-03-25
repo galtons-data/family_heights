@@ -69,6 +69,15 @@ for son in COLUMNS[3:13]:
 parents_and_sons.columns = ['family ID', 'Father', 'Mother', 'Son']
 parents_and_sons = parents_and_sons.astype({'family ID': int}, copy=True)  # in place doesn't work.
 
+# Add two columns for bin numbers
+cross_dict = {'x_bin':range(1,206), 'y_bin':range(1,206)}
+cross = pandas.DataFrame(cross_dict)
+p_and_s_binned = parents_and_sons.join(cross)
+
+p_and_s_binned.loc[(p_and_s_binned['Father']<18.75) & (p_and_s_binned['Father']>18.25), 'x_bin'] = 999
+
+
+
 # Parents and Daughters.
 
 parents_and_daughters = pandas.DataFrame()
